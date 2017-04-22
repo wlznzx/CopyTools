@@ -151,5 +151,10 @@
     <!-- <string name="open_file">Open file</string> -->
     <!-- <string name="msg_change_name">Operation failed, please use a different name.</string> -->
     <!-- <string name="edit">Edit</string> -->
-
+    
+    <string name="find_mapinfo_in_sdcard">Find mapinfo in sdcard , select to copy.</string>
+	
+    <string name="find_kld_staring_copy">Copying the map, do not exit or shutdown.</string>
+    
+    <string name="pasting_mapinfo">Pasting mapinfo,Please do not interrupt</string>
 </resources>

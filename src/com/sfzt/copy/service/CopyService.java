@@ -8,7 +8,6 @@ import java.util.List;
 import com.sfzt.copy.FileInfo;
 import com.sfzt.copy.FileInfoManager;
 import com.sfzt.copy.service.FileManagerService.OperationEventListener;
-import com.sfzt.copy.service.FileOperationTask.UpdateInfo;
 import com.sfzt.copy.service.MultiMediaStoreHelper.PasteMediaStoreHelper;
 import com.sfzt.copy.utils.LogUtils;
 

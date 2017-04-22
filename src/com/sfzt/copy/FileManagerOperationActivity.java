@@ -232,6 +232,13 @@ public class FileManagerOperationActivity extends AbsBaseActivity implements
            mTxtFile = null;
         }
         super.onResume();
+        int _start_reson = getIntent().getIntExtra(Contants.START_RESON, -1);
+        Log.v("file","onResume _start_reson = " + _start_reson);
+        if(_start_reson == MapCopyBroadcastReceiver.RESULT_HAVE_MAPINFO){
+        	Toast.makeText(this, R.string.find_mapinfo_in_sdcard, Toast.LENGTH_LONG).show();
+        }else if(_start_reson == MapCopyBroadcastReceiver.RESULT_HAVE_BACKCOPY){
+        	Toast.makeText(this, R.string.find_kld_staring_copy, Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -571,7 +578,6 @@ public class FileManagerOperationActivity extends AbsBaseActivity implements
                     startActivity(Intent.createChooser(intent, getString(R.string.send_file)));
                 } catch (android.content.ActivityNotFoundException e) {
                     LogUtils.e(TAG, "Cannot find any activity", e);
-                    // TODO add a toast to notify user
                 }
             }
         }
@@ -679,7 +685,6 @@ public class FileManagerOperationActivity extends AbsBaseActivity implements
 	                "/storage/sdcard0", mFileInfoManager.getPasteType(), new HeavyOperationListener(
 	                        R.string.pasting));
         }
-        
     }
 
     @Override
@@ -1014,7 +1019,6 @@ public class FileManagerOperationActivity extends AbsBaseActivity implements
     @Override
     protected void onNewIntent(Intent intent) {
         String path = intent.getStringExtra(INTENT_EXTRA_SELECT_PATH);
-        Log.v("file","onNewIntent path = " + path);
         if (path != null && mService != null && !mService.isBusy(this.getClass().getName())) {
             File file = new File(path);
             if (!file.exists()) {
@@ -1099,7 +1103,7 @@ public class FileManagerOperationActivity extends AbsBaseActivity implements
 	    	        mActionMode.finish();
 	    	        mService.pasteFiles(FileManagerOperationActivity.class.getName(), mFileInfoManager.getPasteList(),
 	    	                "/storage/sdcard0", mFileInfoManager.getPasteType(), new HeavyOperationListener(
-	    	                        R.string.pasting));
+	    	                        R.string.pasting_mapinfo));
 	            }
 	        }
 		}

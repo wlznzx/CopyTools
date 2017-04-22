@@ -85,5 +85,10 @@
     <string name="drm_beam_forbidden_message">受DRM(数字版权管理)保护的文件不能发送。</string>
     <string name="map_copy">点击要复制的列表项</string>
     <string name="file_is_copy">文件或者文件夹已存在</string>    
-
+	
+    <string name="find_mapinfo_in_sdcard">在Sd卡中发现地图数据，请选择拷贝</string>
+    
+    <string name="find_kld_staring_copy">即将拷贝地图数据，请勿退出或关机</string>
+    
+    <string name="pasting_mapinfo">拷贝地图中,请勿中断</string>
 </resources>

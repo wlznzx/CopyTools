@@ -16,7 +16,7 @@ public class SDCardUtils {
         if (dir == null)  
             return false;  
         File directory = new File(dir);  
-        if (!directory.isDirectory()) {  
+        if (!directory.isDirectory()) {
             if (!directory.mkdirs()) {  
                 return false;
             }  

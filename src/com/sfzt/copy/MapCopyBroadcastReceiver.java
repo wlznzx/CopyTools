@@ -17,9 +17,9 @@ import android.util.Log;
 public class MapCopyBroadcastReceiver extends BroadcastReceiver {
 	
 	private final static String TAG = "MapCopyBroadcastReceiver";
-	private final static int RESULT_HAVE_BACKCOPY = 0;
-	private final static int RESULT_HAVE_MAPINFO = 1;
-	private final static int RESULT_NOT_HAVE = 2;
+	public final static int RESULT_HAVE_BACKCOPY = 0;
+	public final static int RESULT_HAVE_MAPINFO = 1;
+	public final static int RESULT_NOT_HAVE = 2;
 	private ListSDFileTask mListSDFileTask;
 	
 	@Override
@@ -70,15 +70,18 @@ public class MapCopyBroadcastReceiver extends BroadcastReceiver {
 			super.onPostExecute(result);
 			switch (result) {
 			case RESULT_HAVE_BACKCOPY:
-//				Intent _i = new Intent();
-//				_i.setComponent(new ComponentName("com.sfzt.copy", "com.sfzt.copy.FileManagerOperationActivity"));
-//				_i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//				mContext.startActivity(_i);
-			case RESULT_HAVE_MAPINFO:
 				Intent _i = new Intent();
 				_i.setComponent(new ComponentName("com.sfzt.copy", "com.sfzt.copy.FileManagerOperationActivity"));
 				_i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				_i.putExtra(Contants.START_RESON, RESULT_HAVE_BACKCOPY);
 				mContext.startActivity(_i);
+				break;
+			case RESULT_HAVE_MAPINFO:
+				Intent _ii = new Intent();
+				_ii.setComponent(new ComponentName("com.sfzt.copy", "com.sfzt.copy.FileManagerOperationActivity"));
+				_ii.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				_ii.putExtra(Contants.START_RESON, RESULT_HAVE_MAPINFO);
+				mContext.startActivity(_ii);
 				break;
 			case RESULT_NOT_HAVE:
 				
