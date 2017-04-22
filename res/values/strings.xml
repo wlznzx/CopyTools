@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Copy Tools</string>
+    <!-- Dialog title -->
+    <string name="sort_by">Sort by</string>
+    <string name="copy">Copy</string>
+    <string name="create_folder">Create folder</string>
+    <string name="cut">Cut</string>
+    <string name="delete">Delete</string>
+    <string name="details">Details</string>
+    <string name="paste">Paste</string>
+    <string name="rename">Rename</string>
+    <string name="new_folder">New folder</string>
+    <string name="confirm_rename">Confirm Rename</string>
+    <!-- Dialog title End -->
+    <!-- Dialog Message -->
+
+    <string name="pasting">Pasting</string>
+    <string name="loading">Loading\u2026</string>
+    <string name="deleting">Deleting</string>
+    <string name="alert_delete_multiple">These items will be deleted.</string>
+    <string name="alert_delete_single">This item will be deleted.</string>
+
+    <string-array name="sort_by">
+        <item>Type</item>
+        <item>Name (A - Z)</item>
+        <item>Size (big - small)</item>
+        <item>Time (new - old)</item>
+    </string-array>
+
+    <string name="name">Name</string>
+    <string name="size">Size</string>
+    <string name="modified_time">Modified</string>
+    <string name="readable">Readable</string>
+    <string name="executable">Executable</string>
+    <string name="writable">Writable</string>
+    <string name="msg_rename_ext">You are changing the file extension, which
+    may cause the file not to be recognized. Are you sure to do this?</string>
+    <string name="wait">Please wait\u2026</string>
+    <!-- Dialog Message End -->
+
+
+    <!-- Dialog Button -->
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <!-- Dialog Button End -->
+
+
+    <!-- Menu String -->
+    <string name="deselect_all">Deselect All</string>
+    <string name="select_all">Select All</string>
+    <string name="share">Share</string>
+    <string name="sort">Sort</string>
+    <string name="more">More</string>
+    <string name="search">Search</string>
+    <string name="show_file">Show hidden files</string>
+    <string name="hide_file">Hide hidden files</string>
+    <!-- Menu String End -->
+
+
+    <!-- Activity -->
+    <string name="selected">selected</string>
+    <string name="send_file">Send file</string>
+    <string name="empty_msg">(Empty Folder)</string>
+    <string name="default_search_text">Search Files</string>
+    <string name="free_space">Available</string>
+    <string name="total_space">Total space</string>
+    <string name="search_files">Search Files</string>
+
+    <!-- Activity End -->
+    <!-- error handle -->
+    <string name="copy_deny">No permission to copy.</string>
+    <string name="cut_deny">No permission to cut.</string>
+    <string name="delete_deny">No permission to delete.</string>
+    <string name="insufficient_memory">Insufficient space.</string>
+    <string name="invalid_empty_name">File or folder name cannot be empty.</string>
+    <string name="paste_same_folder">Cannot paste to the same directory.</string>
+    <string name="invalid_char_prompt">You have input invalid character(s).</string>
+    <string name="msg_unable_open_file">The file format is not supported.</string>
+    <string name="search_text_empty">Search contents should not be empty.</string>
+    <string name="paste_sub_folder">Cannot paste to subfolder.</string>
+    <string name="operation_fail">Some file operation failed.</string>
+    <!-- new -->
+
+
+    <!-- this is search_result sample: "1111" result for "xxx filename" -->
+    <string name="search_result">%2$d result(s) for \"%1$s\"</string>
+    <!-- this is already_exists sample: "abcfilename" is already in use -->
+    <string name="already_exists">%1$s is already in use.</string>
+    <!-- this is path_not_exists sample: "mnt/sdcard/notExist" is not exist -->
+    <string name="path_not_exists">%1$s is not exist.</string>
+    <!-- this is unmounted sample: "sd card" is unmounted -->
+    <string name="unmounted">%1$s is unmounted.</string>
+    <string name="create_hidden_file">File will be hidden if its name starts with \'.\'.</string>
+    <string name="modify_hidden_file">File will not be hidden if its name does not starts with \'.\'.</string>
+    <string name="file_name_too_long">The input name is too long.</string>
+    <string name="paste_fail">Paste failed.</string>
+    <string name="delete_fail">Delete failed.</string>
+    <string name="some_paste_fail">Some paste operations failed.</string>
+    <string name="some_delete_fail">Some delete operations failed.</string>
+    <string name="search_empty">Search content should not be empty.</string>
+    <string name="search_setting_description">Local files and folders</string>
+    <string name="change_mode">Select file or folder</string>
+    <string name="folder_beam_forbidden_title">Can\'t beam folder</string>
+    <string name="folder_beam_forbidden_message">Folder beam is not supported.Please select multiple files to beam.</string>
+    <string name="drm_beam_forbidden_title">Beam forbidden</string>
+    <string name="drm_beam_forbidden_message">DRM(Digital Right Management) protected files can not be beamed.</string>
+    <string name="map_copy">Click list item to copy</string>
+    <string name="baidu_map_iscopy">Baidu map has copied yet.</string>
+    <string name="gaode_map_iscopy">Gaode map has copied yet.</string>
+    <string name="kld_map_iscopy">KLD map has copied yet.</string>
+    <string name="file_is_copy">File or Folder is already exist.</string>
+	
+	<string name="menual">Manual</string>
+	<string name="info1">        1 .Start the software will automatically preview, but do not save\r\n\n
+        2 .The difference between conventional recording and loop recording: conventional video: video start until the end of the video, ten minutes is automatically saved，
+        Until the memory card is full;Loop video: click the Record, save the video to record only the latest 1 minutes.\r\n\n
+        3 .Camera: When recording capabilities, click on the camera will interrupt the current recording\r\n\n
+        4 .Video Playback:You can view saved picture or video, and the machine connected to the network, you can see the location on google maps to show\r\n\n
+        5 .Navigation: while recording ,you can save your location information\r\n\n
+        6 .●Crash automatically save the video switch \r\n\n     
+        \t\tSelected to open when you click the video area will save the video\r\n\n
+		\t\tCheck off when click the video area, do not save the video\r\n\n
+        \t●Long loop video：\r\n\n
+        \t\t1 3 5 over 10 for a long time to save time is 1 or 3, or 5, or 10 
+        \t\tThe unit is minutes (m)\r\n\n
+        \t●Record a video screen：\r\n\n
+        \t\tVideo requirements of the screen the better, the greater the files take up space! Recommended high\r\n\n
+        \t●Screen brightness adjustment：\r\n\n
+        \t\tThe greater the value, the brighter the screen \r\n\n
+        \t●Click the screen to save the video：\r\n\n
+        \t\tOn: Indicates to turn on this feature\r\n
+        \t\tOff: turn off this feature\r\n\n
+        \t●The background can be recorded tone\r\n\n
+        \t\tOpen: said it will open the day after tomorrow to record sound, there will be the voice of the DDD！\r\n
+        \t\tOff: no, background recording sound\r\n\n
+        \t●Whether or not to record sounds：\r\n\n
+        \t\tOpen: open said recording\r\n
+        \t\tOff: not recorded\r\n</string>
+    <!-- remove -->
+    <!-- <string name = "invalid_file_name"> -->
+    <!-- <string name="sdcard_unmounted">SDCard is unmounted</string> -->
+    <!-- <string name="sdcard2_unmounted">SDCard2 is unmounted</string> -->
+    <!-- <string name="ext_storage_unmounted">External Storage %s is unmounted</string> -->
+    <!-- <string name="support_fail" product="tablet">This is not supported by device</string> -->
+    <!-- <string name="support_fail" product="default">This is not supported by phone</string> -->
+    <!-- <string name="open_file">Open file</string> -->
+    <!-- <string name="msg_change_name">Operation failed, please use a different name.</string> -->
+    <!-- <string name="edit">Edit</string> -->
+
+</resources>
